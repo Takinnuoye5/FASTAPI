@@ -73,6 +73,7 @@ def update_student(id: int, first_name: Optional[str] = None, last_name: Optiona
 
     return student
 
+
 @app.delete("/students/{id}")
 def delete_student(id: int):
     if id in students:
